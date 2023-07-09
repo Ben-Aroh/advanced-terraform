@@ -1,5 +1,5 @@
-resource "aws_security_group" "team2_ssh" {
-  name        = "team2-ssh"
+resource "aws_security_group" "team5_ssh" {
+  name        = "team5-ssh"
   description = "Allow ssh connection to instance"
 
   ingress {
