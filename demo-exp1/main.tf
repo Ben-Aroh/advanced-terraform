@@ -20,11 +20,11 @@ resource "aws_instance" "web" {
   for_each      = toset(local.ec2_ami)
   ami           = each.key
   instance_type = var.instance_type
-  #key_name               = "team2-test"
-  vpc_security_group_ids = [aws_security_group.team2_ssh.id]
+  #key_name               = "team5-test"
+  vpc_security_group_ids = [aws_security_group.team5_ssh.id]
 
   tags = {
-    Name = "team2-${each.key}-test"
+    Name = "team5-${each.key}-test"
   }
 }
 
